@@ -1,0 +1,26 @@
+name: Reusable — Conventional PR Title
+
+on:
+  workflow_call:
+
+permissions:
+  pull-requests: read
+
+jobs:
+  check-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validar título do Pull Request (Conventional Commits)
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          python3 - <<'PY'
+          import os, re, sys
+
+          title = os.environ.get("PR_TITLE", "").strip()
+          pattern = r"^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9._/-]+\))?!?: .+"
+          if not re.match(pattern, title):
+              print(f"Título de PR fora do padrão Conventional Commits: {title!r}", file=sys.stderr)
+              sys.exit(1)
+          print(f"Título válido: {title}")
+          PY

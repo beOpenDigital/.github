@@ -1,0 +1,39 @@
+name: Proposta de melhoria
+description: Sugerir uma nova funcionalidade ou evolução em um projeto da OpenDigital.
+title: "[Melhoria]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou oportunidade
+      description: Qual necessidade real esta proposta resolve e por que ela importa?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Descreva a solução esperada em alto nível.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Como validar objetivamente que a entrega está concluída?
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+    validations:
+      required: false
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Fora de escopo
+      description: O que esta proposta explicitamente não cobre?
+    validations:
+      required: false

@@ -1,0 +1,6 @@
+{
+  "name": "OpenDigital — CI Node.js",
+  "description": "Workflow inicial de lint, testes e build para projetos Node.js/TypeScript da OpenDigital.",
+  "categories": ["JavaScript", "TypeScript"],
+  "filePatterns": ["package.json$"]
+}

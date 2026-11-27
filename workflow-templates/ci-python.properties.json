@@ -1,0 +1,6 @@
+{
+  "name": "OpenDigital — CI Python",
+  "description": "Workflow inicial de testes automatizados para projetos Python da OpenDigital.",
+  "categories": ["Python"],
+  "filePatterns": ["pyproject.toml$", "requirements.txt$"]
+}

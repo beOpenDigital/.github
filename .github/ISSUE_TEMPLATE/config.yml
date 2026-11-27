@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Reportar vulnerabilidade de segurança
+    url: https://beopendigital.com/seguranca
+    about: Não abra issues públicas para falhas de segurança. Consulte as instruções de reporte responsável.
+  - name: Site institucional OpenDigital
+    url: https://beopendigital.com
+    about: Informações institucionais, catálogo de produtos e documentos jurídicos oficiais.
